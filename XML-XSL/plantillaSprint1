@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<enpresa>
+<izena>enpresa izena</izena>
+<estatua>Euskal Herria</estatua>
+<!--  =============== DEPARTAMENTUAK ======================= -->
+<departamentuak>
+<departamentua id="d1">
+<izena>Informatika</izena>
+<zentroa>
+  <izena>Elorrieta Errekamari</izena>
+  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+</zentroa>
+</departamentua>
+
+<departamentua id="d2">
+<izena>Marketing</izena>
+<zentroa>
+  <izena>Elorrieta Errekamari</izena>
+  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+</zentroa>
+</departamentua>
+</departamentuak>
+<!--  ========================= LANGILEAK ================================ -->
+<langileak>
+<langilea idDepartamentu="d2" >
+<izena>Unai</izena>
+<abizena>Souto</abizena>
+<soldata moneda="€">1500</soldata>
+<ardurak>
+<ardura>a1</ardura>
+</ardurak>
+</langilea>
+
+<langilea idDepartamentu="d1">
+<izena>Iker</izena>
+<abizena>Sanchez</abizena>
+<soldata moneda="€">2000</soldata>
+<ardurak>
+<ardura>a1</ardura>
+</ardurak>
+</langilea>
+</langileak>
+<!-- ======================= ARDURAK =================================== -->
+<ardurak>
+<ardura id="a1">
+<postua>Bozeramailea</postua>
+<deskribapena>Departamentuko bozeramailea da</deskribapena>
+</ardura>
+
+<ardura id="a2">
+<postua>Programatzailea</postua>
+<deskribapena>Departamentuko programatzaile bat da</deskribapena>
+</ardura>
+</ardurak>
+</enpresa>
