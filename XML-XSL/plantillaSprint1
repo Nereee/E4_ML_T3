@@ -1,31 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <enpresa>
-<izena>enpresa izena</izena>
+<izena>InformatikEus</izena>
 <estatua>Euskal Herria</estatua>
-<!--  =============== DEPARTAMENTUAK ======================= -->
-<departamentuak>
-<departamentua id="d1">
-<izena>Informatika</izena>
-<zentroa>
-  <izena>Elorrieta Errekamari</izena>
-  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-</zentroa>
-</departamentua>
-
-<departamentua id="d2">
-<izena>Marketing</izena>
-<zentroa>
-  <izena>Elorrieta Errekamari</izena>
-  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-</zentroa>
-</departamentua>
-</departamentuak>
 <!--  ========================= LANGILEAK ================================ -->
 <langileak>
 <langilea idDepartamentu="d2" >
 <izena>Unai</izena>
 <abizena>Souto</abizena>
 <soldata moneda="€">1500</soldata>
+<telefonoa>12474622</telefonoa>
+<postakodea>48980</postakodea>
+<departamentuArduraduna>Ez</departamentuArduraduna>
+<hasiData>2024/04/19</hasiData>
 <ardurak>
 <ardura>a1</ardura>
 </ardurak>
@@ -35,11 +21,37 @@
 <izena>Iker</izena>
 <abizena>Sanchez</abizena>
 <soldata moneda="€">2000</soldata>
+<telefonoa>94867357</telefonoa>
+<postakodea>48970</postakodea>
+<departamentuArduraduna>Bai</departamentuArduraduna>
+<hasiData>2022/04/19</hasiData>
 <ardurak>
 <ardura>a1</ardura>
 </ardurak>
 </langilea>
 </langileak>
+
+<!--  =============== DEPARTAMENTUAK ======================= -->
+<departamentuak>
+<departamentua id="d1">
+<izena>Informatika</izena>
+<zentroa>
+  <izena>Elorrieta Errekamari</izena>
+  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+  <telefonoa>944 02 80 00</telefonoa>
+</zentroa>
+</departamentua>
+
+<departamentua id="d2">
+<izena>Marketing</izena>
+<zentroa>
+  <izena>Elorrieta Errekamari</izena>
+  <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+  <telefonoa>944 02 80 00</telefonoa>
+</zentroa>
+</departamentua>
+</departamentuak>
+
 <!-- ======================= ARDURAK =================================== -->
 <ardurak>
 <ardura id="a1">
