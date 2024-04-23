@@ -6,8 +6,8 @@ $error_message = ""; // Variable para almacenar el mensaje de error
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     
     $servername = "10.5.6.220:3306";
-    $username = "username";
-    $password = "password";
+    $username = "Admin";
+    $password = "Admin12345";
     $db = "DB_Sprotify";
 
     // Konexioa sortu
@@ -38,13 +38,12 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
         if(password_verify($pwd, $rowstr)){
             echo"Login bien";
         $_SESSION['erabiltzailea'] =  $erabiltzailea;
-        header("Location: /Html/menu.html");
+        header("Location: ../html/menu.html");
         exit;
-    }
-    
-    } else {
-        // Mostrar un mensaje de error si la autenticación falla
-        $error_message = "Pasahitza edo erabiltzailea ez dira zuzenak";
+        } else {
+            // Mostrar un mensaje de error si la autenticación falla
+            $error_message = "Pasahitza edo erabiltzailea ez dira zuzenak";
+        }
     }
 
     // Konexioa itxi
@@ -57,22 +56,22 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style/login.css">
-    <link rel="shortcut icon" href="/IMG/logo/Logo.PNG">
-    <title>PHIM Zinemak</title>
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="shortcut icon" href="../img/logo/Logo.PNG">
+    <title>IJU login</title>
 </head>
 <body>
 <main>
     <div class="kutxa">
         <h1>Login</h1>
-        <form id="userform" action="index.php" method="POST">
+        <form id="userform" action="login.php" method="POST">
             <div class="userkutxa">
-                <img src="/IMG/login/profile-svgrepo-com.svg" alt="erabiltzailea">
+                <img src="../img/login/profile-svgrepo-com.svg" alt="erabiltzailea">
                 <label for="erabiltzailea">Erabiltzailea</label> <br>
             </div>
             <input type="text" id="erabiltzailea" name="erabiltzailea"> <br>
             <div class="userkutxa">
-                <img src="/IMG/login/padlock-svgrepo-com.svg" alt="pasahitza">
+                <img src="../img/login/padlock-svgrepo-com.svg" alt="pasahitza">
                 <label for="pasahitza">Pasahitza</label> <br>
             </div>
             <input type="password" id="pasahitza" name="pasahitza">
