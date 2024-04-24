@@ -34,17 +34,21 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     if ($result && $result->num_rows > 0) {
         // Iniciar sesión y redirigir al usuario a la página de inicio
         $row = mysqli_fetch_assoc($result);
-        $rowstr = strval($row[0]);
-        if(password_verify($pwd, $rowstr)){
-            echo"Login bien";
-        $_SESSION['erabiltzailea'] =  $erabiltzailea;
-        header("Location: ../html/menu.html");
-        exit;
+		$pwdtxt = $row['Pasahitza'];
+		
+        if(password_verify($pwd, $pwdtxt)){
+			echo("entroalif");
+			$_SESSION['erabiltzailea'] =  $erabiltzailea;
+			header("Location: ../html/menu.html");
+			exit;
         } else {
             // Mostrar un mensaje de error si la autenticación falla
-            $error_message = "Pasahitza edo erabiltzailea ez dira zuzenak";
+            $error_message = "Erabiltzailea edo pasahitza ez daude zuzen";
         }
-    }
+    }else {
+            // Mostrar un mensaje de error si la autenticación falla
+            $error_message = "Erabiltzailea edo pasahitza ez daude zuzen";
+        }
 
     // Konexioa itxi
     $mysqli->close();
