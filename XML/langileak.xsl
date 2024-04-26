@@ -22,7 +22,7 @@
             <span class="bar"></span>
           </div>
           <div class="menu" id="menu">
-            <a href="../index.html">Hasiera</a>
+            <a href="../html/menu.html">Hasiera</a>
             <a href="langileak.php">Langileak</a>
             <a href="departamentuak.php">Departamentuak</a>
             <a href="eskaintzak.html">Estadistikak</a>
