@@ -6,8 +6,8 @@ $error_message = ""; // Variable para almacenar el mensaje de error
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     
     $servername = "10.5.6.220:3306";
-    $username = "username";
-    $password = "password";
+    $username = $_POST["erabiltzailea"];
+    $password = $_POST["pasahitza"]; 
     $db = "DB_Sprotify";
 
     // Konexioa sortu
@@ -15,43 +15,17 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
 
     error_reporting(0);
     
-    $mysqli = new mysqli($servername, $username, $password, $db);
+    // $mysqli = new mysqli($servername, $username, $password, $db);
+    $konexioa=@mysqli_connect($servername, $username, $password);
 
     // Konexioa egiaztatu
-    if ($mysqli->connect_error) {
-        die("Connection failed: " . $mysqli->connect_error);
+    if (!$konexioa) {
+        $error_message = "Erabiltzailea edo pasahitza ez daude zuzen";
+    }else{
+        header("Location: ../html/menu.html");
+        mysqli_close($konexioa);
+        exit;
     }
-
-    // Kontsulta
-    $erabiltzailea = $_POST["erabiltzailea"];
-    $pwd = $_POST["pasahitza"]; 
-
-    $sql = "SELECT Pasahitza FROM Bezeroa WHERE Erabiltzailea = '$erabiltzailea'";
-    
-    // Kontsulta egin db
-    $result = $mysqli->query($sql);
-
-    if ($result && $result->num_rows > 0) {
-        // Iniciar sesión y redirigir al usuario a la página de inicio
-        $row = mysqli_fetch_assoc($result);
-		$pwdtxt = $row['Pasahitza'];
-		
-        if(password_verify($pwd, $pwdtxt)){
-			echo("entroalif");
-			$_SESSION['erabiltzailea'] =  $erabiltzailea;
-			header("Location: ../html/menu.html");
-			exit;
-        } else {
-            // Mostrar un mensaje de error si la autenticación falla
-            $error_message = "Erabiltzailea edo pasahitza ez daude zuzen";
-        }
-    }else {
-            // Mostrar un mensaje de error si la autenticación falla
-            $error_message = "Erabiltzailea edo pasahitza ez daude zuzen";
-        }
-
-    // Konexioa itxi
-    $mysqli->close();
 }
 ?>
 
