@@ -6,8 +6,8 @@ $error_message = ""; // Variable para almacenar el mensaje de error
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     
     $servername = "10.5.6.220:3306";
-    $username = "Admin";
-    $password = "Admin12345";
+    $username = "username";
+    $password = "password";
     $db = "DB_Sprotify";
 
     // Konexioa sortu
