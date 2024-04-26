@@ -37,9 +37,9 @@
         <main class="langdep">
           <div class="lang_depak">
             <!-- Langile/Departamentuen irudia eta izena ateratzen du -->
-            <xsl:for-each select="langileak/langilea">
+            <xsl:for-each select="departamentuak/departamentua">
               <div class="langdepKutxa">
-                <img src="{irudia}" alt="Langile irudia" />
+                <img src="{irudia}" alt="Departamentu irudia" />  
                 <span class="langdepIzena">
                   <xsl:value-of select="izena" />
                 </span>

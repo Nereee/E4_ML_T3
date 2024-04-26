@@ -3,11 +3,13 @@ session_start();
 
 $error_message = ""; // Variable para almacenar el mensaje de error
 
-if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
+//if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     
     $servername = "10.5.6.220:3306";
-    $username = $_POST["erabiltzailea"];
-    $password = $_POST["pasahitza"]; 
+    $username = "Admin";
+    $password = "Admin12345."; 
+	// $username = $_POST["erabiltzailea"];
+    // $password = $_POST["pasahitza"]; 
     $db = "DB_Sprotify";
 
     // Konexioa sortu
@@ -26,7 +28,7 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
         mysqli_close($konexioa);
         exit;
     }
-}
+//}
 ?>
 
 <!DOCTYPE html>
