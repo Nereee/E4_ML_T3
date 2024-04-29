@@ -1,197 +1,185 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <enpresa>
-<izena>InformatikEus</izena>
-<estatua>Euskal Herria</estatua>
-<!--  ========================= LANGILEAK ================================ -->
-<langileak>
-<langilea idDepartamentu="d1" >
-        <izena>Unai</izena>
-        <abizena>Souto</abizena>
-        <soldata moneda="€">1500</soldata>
-        <telefonoa>944 12 98 02</telefonoa>
-        <email>unai.souto@elorrieta-errekamari.com</email>
-        <postakodea>48980</postakodea>
-        <departamentuArduraduna>Ez</departamentuArduraduna>
-        <hasiData>2024/04/19</hasiData>
-        <irudia>../IMG/langileak/unai.png</irudia>
-        <ardurak>
-            <ardura>a1</ardura>
-        </ardurak>
-</langilea>
-
-<langilea idDepartamentu="d1">
-        <izena>Iker</izena>
-        <abizena>Sanchez</abizena>
-        <soldata moneda="€">2000</soldata>
-        <telefonoa>944 30 85 30</telefonoa>
-        <email>iker.sanchez@elorrieta-errekamari.com</email>
-        <postakodea>48970</postakodea>
-        <departamentuArduraduna>Bai</departamentuArduraduna>
-        <hasiData>2022/04/19</hasiData>
-        <irudia>../IMG/langileak/iker.png</irudia>
-        <ardurak>
-            <ardura>a1</ardura>
-        </ardurak>
-</langilea>
-
-<langilea idDepartamentu="d2">
-        <izena>Juan</izena>
-        <abizena>Perez</abizena>
-        <soldata moneda="€">1800</soldata>
-        <telefonoa>944 40 50 60</telefonoa>
-        <email>juan.perez@elorrieta-errekamari.com</email>
-        <postakodea>48960</postakodea>
-        <departamentuArduraduna>Bai</departamentuArduraduna>
-        <hasiData>2023/05/10</hasiData>
-        <irudia>../IMG/langileak/juan.png</irudia>
-        <ardurak>
-            <ardura>a2</ardura>
-        </ardurak>
+  <izena>InformatikEus</izena>
+  <estatua>Euskal Herria</estatua>
+  <!--  ========================= LANGILEAK ================================ -->
+  <langileak>
+    <langilea idDepartamentu="d1">
+      <izena>Unai</izena>
+      <abizena>Souto</abizena>
+      <soldata moneda="€">1500</soldata>
+      <telefonoa>944 12 98 02</telefonoa>
+      <email>unai.souto@elorrieta-errekamari.com</email>
+      <postakodea>48980</postakodea>
+      <departamentuArduraduna>Ez</departamentuArduraduna>
+      <hasiData>2024/04/19</hasiData>
+      <irudia>../IMG/langileak/unai.png</irudia>
+      <ardurak>
+        <ardura>a1</ardura>
+      </ardurak>
     </langilea>
-    
-  <langilea idDepartamentu="d2">
-        <izena>María</izena>
-        <abizena>García</abizena>
-        <soldata moneda="€">1700</soldata>
-        <telefonoa>944 70 80 90</telefonoa>
-        <email>maria.garcia@elorrieta-errekamari.com</email>
-        <postakodea>48990</postakodea>
-        <departamentuArduraduna>Ez</departamentuArduraduna>
-        <hasiData>2023/06/15</hasiData>
-        <irudia>../IMG/langileak/maria.png</irudia>
-        <ardurak>
-            <ardura>a2</ardura>
-        </ardurak>
-</langilea>
 
-<langilea idDepartamentu="d3">
-        <izena>Carlos</izena>
-        <abizena>Martinez</abizena>
-        <soldata moneda="€">1900</soldata>
-        <telefonoa>944 50 60 70</telefonoa>
-        <email>carlos.martinez@elorrieta-errekamari.com</email>
-        <postakodea>48970</postakodea>
-        <departamentuArduraduna>Bai</departamentuArduraduna>
-        <hasiData>2023/07/20</hasiData>
-        <irudia>../IMG/langileak/carlos.png</irudia>
-        <ardurak>
-            <ardura>a3</ardura>
-        </ardurak>
-</langilea>
+    <langilea idDepartamentu="d1">
+      <izena>Iker</izena>
+      <abizena>Sanchez</abizena>
+      <soldata moneda="€">2000</soldata>
+      <telefonoa>944 30 85 30</telefonoa>
+      <email>iker.sanchez@elorrieta-errekamari.com</email>
+      <postakodea>48970</postakodea>
+      <departamentuArduraduna>Bai</departamentuArduraduna>
+      <hasiData>2022/04/19</hasiData>
+      <irudia>../IMG/langileak/iker.png</irudia>
+      <ardurak>
+        <ardura>a1</ardura>
+      </ardurak>
+    </langilea>
 
-<langilea idDepartamentu="d3">
-        <izena>Clara</izena>
-        <abizena>Escudero</abizena>
-        <soldata moneda="€">1900</soldata>
-        <telefonoa>944 50 60 70</telefonoa>
-        <email>clara.escudero@elorrieta-errekamari.com</email>
-        <postakodea>48970</postakodea>
-        <departamentuArduraduna>Ez</departamentuArduraduna>
-        <hasiData>2023/07/20</hasiData>
-        <irudia>../IMG/langileak/clara.png</irudia>
-        <ardurak>
-            <ardura>a3</ardura>
-        </ardurak>
-</langilea>
+    <langilea idDepartamentu="d2">
+      <izena>Juan</izena>
+      <abizena>Perez</abizena>
+      <soldata moneda="€">1800</soldata>
+      <telefonoa>944 40 50 60</telefonoa>
+      <email>juan.perez@elorrieta-errekamari.com</email>
+      <postakodea>48960</postakodea>
+      <departamentuArduraduna>Bai</departamentuArduraduna>
+      <hasiData>2023/05/10</hasiData>
+      <irudia>../IMG/langileak/juan.png</irudia>
+      <ardurak>
+        <ardura>a2</ardura>
+      </ardurak>
+    </langilea>
 
-<langilea idDepartamentu="d4">
-        <izena>Asier</izena>
-        <abizena>Martinez</abizena>
-        <soldata moneda="€">1900</soldata>
-        <telefonoa>944 50 60 70</telefonoa>
-        <email>asier.martinez@elorrieta-errekamari.com</email>
-        <postakodea>48970</postakodea>
-        <departamentuArduraduna>Bai</departamentuArduraduna>
-        <hasiData>2023/07/20</hasiData>
-        <irudia>../IMG/langileak/asier.png</irudia>
-        <ardurak>
-            <ardura>a4</ardura>
-        </ardurak>
-</langilea>
+    <langilea idDepartamentu="d2">
+      <izena>María</izena>
+      <abizena>García</abizena>
+      <soldata moneda="€">1700</soldata>
+      <telefonoa>944 70 80 90</telefonoa>
+      <email>maria.garcia@elorrieta-errekamari.com</email>
+      <postakodea>48990</postakodea>
+      <departamentuArduraduna>Ez</departamentuArduraduna>
+      <hasiData>2023/06/15</hasiData>
+      <irudia>../IMG/langileak/maria.png</irudia>
+      <ardurak>
+        <ardura>a2</ardura>
+      </ardurak>
+    </langilea>
 
-<langilea idDepartamentu="d4">
-        <izena>Miguel</izena>
-        <abizena>Pérez</abizena>
-        <soldata moneda="€">1900</soldata>
-        <telefonoa>944 50 60 70</telefonoa>
-        <email>miguel.perez@elorrieta-errekamari.com</email>
-        <postakodea>48970</postakodea>
-        <departamentuArduraduna>Ez</departamentuArduraduna>
-        <hasiData>2023/07/20</hasiData>
-        <irudia>../IMG/langileak/miguel.png</irudia>
-        <ardurak>
-            <ardura>a4</ardura>
-        </ardurak>
-</langilea>
-</langileak>
+    <langilea idDepartamentu="d3">
+      <izena>Carlos</izena>
+      <abizena>Martinez</abizena>
+      <soldata moneda="€">1900</soldata>
+      <telefonoa>944 50 60 70</telefonoa>
+      <email>carlos.martinez@elorrieta-errekamari.com</email>
+      <postakodea>48970</postakodea>
+      <departamentuArduraduna>Bai</departamentuArduraduna>
+      <hasiData>2023/07/20</hasiData>
+      <irudia>../IMG/langileak/carlos.png</irudia>
+      <ardurak>
+        <ardura>a3</ardura>
+      </ardurak>
+    </langilea>
 
-<!--  =============== DEPARTAMENTUAK ======================= -->
-<departamentuak>
-  <departamentua id="d1">
-          <izena>Informatika</izena>
-            <zentroa>
-              <izena>InfoMatik</izena>
-              <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-              <telefonoa>944 02 80 00</telefonoa>
-              <email>infomatik@gmail.com</email>
-              <irudia>../IMG/departamentuak/informatika.png</irudia>
-            </zentroa>
-  </departamentua>
+    <langilea idDepartamentu="d3">
+      <izena>Clara</izena>
+      <abizena>Escudero</abizena>
+      <soldata moneda="€">1900</soldata>
+      <telefonoa>944 50 60 70</telefonoa>
+      <email>clara.escudero@elorrieta-errekamari.com</email>
+      <postakodea>48970</postakodea>
+      <departamentuArduraduna>Ez</departamentuArduraduna>
+      <hasiData>2023/07/20</hasiData>
+      <irudia>../IMG/langileak/clara.png</irudia>
+      <ardurak>
+        <ardura>a3</ardura>
+      </ardurak>
+    </langilea>
 
-  <departamentua id="d2">
-          <izena>Marketing</izena>
-            <zentroa>
-              <izena>InfoMatik</izena>
-              <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-              <telefonoa>944 02 80 00</telefonoa>
-              <email>infomatik@gmail.com</email>
-              <irudia>../IMG/departamentuak/marketing.png</irudia>
-            </zentroa>
-  </departamentua>
+    <langilea idDepartamentu="d4">
+      <izena>Asier</izena>
+      <abizena>Martinez</abizena>
+      <soldata moneda="€">1900</soldata>
+      <telefonoa>944 50 60 70</telefonoa>
+      <email>asier.martinez@elorrieta-errekamari.com</email>
+      <postakodea>48970</postakodea>
+      <departamentuArduraduna>Bai</departamentuArduraduna>
+      <hasiData>2023/07/20</hasiData>
+      <irudia>../IMG/langileak/asier.png</irudia>
+      <ardurak>
+        <ardura>a4</ardura>
+      </ardurak>
+    </langilea>
 
-  <departamentua id="d3">
-          <izena>Finantzak</izena>
-            <zentroa>
-              <izena>InfoMatik</izena>
-              <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-              <telefonoa>944 02 80 00</telefonoa>
-              <email>infomatik@gmail.com</email>
-              <irudia>../IMG/departamentuak/finantzak.png</irudia>
-            </zentroa>
-  </departamentua>
+    <langilea idDepartamentu="d4">
+      <izena>Miguel</izena>
+      <abizena>Pérez</abizena>
+      <soldata moneda="€">1900</soldata>
+      <telefonoa>944 50 60 70</telefonoa>
+      <email>miguel.perez@elorrieta-errekamari.com</email>
+      <postakodea>48970</postakodea>
+      <departamentuArduraduna>Ez</departamentuArduraduna>
+      <hasiData>2023/07/20</hasiData>
+      <irudia>../IMG/langileak/miguel.png</irudia>
+      <ardurak>
+        <ardura>a4</ardura>
+      </ardurak>
+    </langilea>
+  </langileak>
 
-  <departamentua id="d4">
-        <izena>Administrazioa</izena>
-          <zentroa>
-            <izena>InfoMatik</izena>
-            <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
-            <telefonoa>944 02 80 00</telefonoa>
-            <email>infomatik@gmail.com</email>
-            <irudia>../IMG/departamentuak/administrazioa.png</irudia>
-          </zentroa>
+  <!--  =============== DEPARTAMENTUAK ======================= -->
+  <departamentuak>
+    <departamentua id="d1">
+      <izena>Informatika</izena>
+      <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+      <telefonoa>944 50 45 41</telefonoa>
+      <email>informatik@gmail.com</email>
+      <irudia>../IMG/departamentuak/informatika.png</irudia>
     </departamentua>
-</departamentuak>
 
-<!-- ======================= ARDURAK =================================== -->
-<ardurak>
-<ardura id="a1">
-    <postua>Programatzailea</postua>
-    <deskribapena>Departamentuko programatzaile bat da</deskribapena>
-</ardura>
+    <departamentua id="d2">
+      <izena>Marketing</izena>
+      <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+      <telefonoa>944 22 88 10</telefonoa>
+      <email>marketik@gmail.com</email>
+      <irudia>../IMG/departamentuak/marketing.png</irudia>
+    </departamentua>
 
-<ardura id="a2">
-    <postua>Markenting Koordinatzailea</postua>
-    <deskribapena>Markenting departamentuko koordinatzailea</deskribapena>
-</ardura>
+    <departamentua id="d3">
+      <izena>Finantzak</izena>
+      <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+      <telefonoa>944 76 14 88</telefonoa>
+      <email>finantzik@gmail.com</email>
+      <irudia>../IMG/departamentuak/finantzak.png</irudia>
+    </departamentua>
 
-<ardura id="a3">
-    <postua>Bozeramailea</postua>
-    <deskribapena>Departamentuko bozeramailea da</deskribapena>
-</ardura>
+    <departamentua id="d4">
+      <izena>Administrazioa</izena>
+      <helbidea>Agirre Lehendakariaren Etorb., 184, Deusto, 48015 Bilbo, Bizkaia</helbidea>
+      <telefonoa>944 70 23 54</telefonoa>
+      <email>admninik@gmail.com</email>
+      <irudia>../IMG/departamentuak/administrazioa.png</irudia>
+    </departamentua>
+  </departamentuak>
 
-<ardura id="a4">
-    <postua>Administrazioa</postua>
-    <deskribapena>Administrazio arduraduna</deskribapena>
-</ardura>
-</ardurak>
+  <!-- ======================= ARDURAK =================================== -->
+  <ardurak>
+    <ardura id="a1">
+      <postua>Programatzailea</postua>
+      <deskribapena>Departamentuko programatzaile bat da</deskribapena>
+    </ardura>
+
+    <ardura id="a2">
+      <postua>Markenting Koordinatzailea</postua>
+      <deskribapena>Markenting departamentuko koordinatzailea</deskribapena>
+    </ardura>
+
+    <ardura id="a3">
+      <postua>Bozeramailea</postua>
+      <deskribapena>Departamentuko bozeramailea da</deskribapena>
+    </ardura>
+
+    <ardura id="a4">
+      <postua>Administrazioa</postua>
+      <deskribapena>Administrazio arduraduna</deskribapena>
+    </ardura>
+  </ardurak>
 </enpresa>

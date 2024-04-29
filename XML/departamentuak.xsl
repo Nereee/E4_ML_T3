@@ -14,7 +14,7 @@
       <body>
         <nav>
           <div class="logo">
-            <img src="../IMG/logo/Logo.PNG" alt="Logo"/>
+            <img src="../IMG/logo/Logo.PNG" alt="Logo" />
           </div>
           <div class="menu-toggle" id="mobile-menu" onclick="MenuAldaketa()">
             <span class="bar"></span>
@@ -25,24 +25,31 @@
             <a href="../html/menu.html">Hasiera</a>
             <a href="langileak.php">Langileak</a>
             <a href="departamentuak.php">Departamentuak</a>
-            <a href="eskaintzak.html">Estadistikak</a>
           </div>
           <script>
             function MenuAldaketa() {
             document.getElementById("menu").classList.toggle("active");
-            document.getElementById("mobile-menu").classList.toggle("active");
+    document.getElementById("mobile-menu").classList.toggle("active");
             }
           </script>
         </nav>
         <main class="langdep">
-          <div class="lang_depak">
-            <!-- Langile/Departamentuen irudia eta izena ateratzen du -->
-            <xsl:for-each select="departamentuak/departamentua">
+          <div id="lang_depak">
+            <xsl:for-each select="//departamentuak/departamentua">
               <div class="langdepKutxa">
-                <img src="{irudia}" alt="Departamentu irudia" />  
-                <span class="langdepIzena">
-                  <xsl:value-of select="izena" />
-                </span>
+                <img>
+                  <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
+                  <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                </img>
+                <p>
+                  <xsl:value-of select="izena"></xsl:value-of>
+                </p>
+                <p>
+                  <xsl:value-of select="telefonoa"></xsl:value-of>
+                </p>
+                <p>
+                  <xsl:value-of select="email"></xsl:value-of>
+                </p>
               </div>
             </xsl:for-each>
           </div>
@@ -88,7 +95,7 @@
               </ul>
             </div>
           </div>
-          <hr/>
+          <hr />
           <div id="footerkarratu">
             <a class="copy" href="http://creativecommons.org/ns#"
             >Lan honek CC lizentzia du <img
@@ -98,21 +105,21 @@
               vertical-align: text-bottom;
             "
                 src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-                alt=""/><img
+                alt="" /><img
                 style="
               height: 22px !important;
               margin-left: 3px;
               vertical-align: text-bottom;
             "
                 src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-                alt=""/><img
+                alt="" /><img
                 style="
               height: 22px !important;
               margin-left: 3px;
               vertical-align: text-bottom;
             "
                 src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
-                alt=""/><img
+                alt="" /><img
                 style="
               height: 22px !important;
               margin-left: 3px;
