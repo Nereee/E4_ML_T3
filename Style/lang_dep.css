@@ -1,7 +1,7 @@
 #lang_depak {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas con anchos iguales */
-    gap: 20px; /* Espacio entre los contenedores */
+    grid-template-columns: repeat(4, 1fr); /* Lau zutabeak berdineko zabalerekin */
+    gap: 20px; /* Kontainerrak arteko tartea */
 }
 
 .langdepKutxa {
@@ -12,11 +12,11 @@
 }
 
 .langdepKutxa img {
-    max-height: 200px; /* Altura máxima de la imagen */
+    max-height: 200px; /* Irudiaren gehienezko altuera */
 }
 
 .langdepIzena {
-    margin-top: 10px; /* Espacio entre la imagen y el nombre */
+    margin-top: 10px; /* Irudia eta izena arteko tartea */
     font-size: 16px;
 }
 

@@ -16,27 +16,18 @@
           <div class="logo">
             <img src="../IMG/logo/Logo.PNG" alt="Logo" />
           </div>
-          <div class="menu-toggle" id="mobile-menu" onclick="MenuAldaketa()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
           <div class="menu" id="menu">
             <a href="../html/menu.html">Hasiera</a>
             <a href="langileak.php">Langileak</a>
             <a href="departamentuak.php">Departamentuak</a>
           </div>
-          <script>
-            function MenuAldaketa() {
-            document.getElementById("menu").classList.toggle("active");
-    document.getElementById("mobile-menu").classList.toggle("active");
-            }
-          </script>
         </nav>
+        <!-- Hemen langileak agertuko dira. Datuak.XML-tik ateratuta -->
         <main class="langdep">
           <div id="lang_depak">
             <xsl:for-each select="//langilea">
               <div class="langdepKutxa">
+                <!-- for-each bat egiten dut. Non langileen irudia bere alt-rekin, izena/abizena, telefonoa, eta emaila ateratzen ditut -->
                 <img>
                   <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
                   <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
