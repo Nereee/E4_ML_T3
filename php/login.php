@@ -6,18 +6,14 @@ $error_message = ""; // Variable para almacenar el mensaje de error
 if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     
     $servername = "10.5.6.220:3306";
-    // $username = "Admin";
-    // $password = "Admin12345."; 
-	$username = $_POST["erabiltzailea"];
+    $username = $_POST["erabiltzailea"];
     $password = $_POST["pasahitza"]; 
-    $db = "DB_Sprotify";
 
     // Konexioa sortu
 
 
     error_reporting(0);
-    
-    // $mysqli = new mysqli($servername, $username, $password, $db);
+
     $konexioa=@mysqli_connect($servername, $username, $password);
 
     // Konexioa egiaztatu
@@ -30,6 +26,7 @@ if (isset($_POST['erabiltzailea']) && isset($_POST['pasahitza'])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
