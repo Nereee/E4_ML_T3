@@ -1,0 +1,44 @@
+#lang_depak {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Lau zutabeak berdineko zabalerekin */
+    gap: 20px; /* Kontainerrak arteko tartea */
+}
+
+.langdepKutxa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.langdepKutxa img {
+    max-height: 200px; /* Irudiaren gehienezko altuera */
+}
+
+.langdepIzena {
+    margin-top: 10px; /* Irudia eta izena arteko tartea */
+    font-size: 16px;
+}
+
+.langdep {
+    margin: 0 auto;
+    max-width: 100%; 
+    padding: 20px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 90%);
+}
+
+@media screen and (max-width: 600px){
+    #lang_depak {
+        grid-template-columns: auto;
+    }
+    .langdepKutxa img {
+        max-height: 100px;
+        margin-top: 10px;
+    }
+    .langdepKutxa {
+        border-top: 1px solid black;
+
+    }
+}

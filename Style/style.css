@@ -2,7 +2,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: 'Advent Pro';
+  font-family: 'Arial';
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@ nav {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   max-height: 0;
@@ -96,7 +97,7 @@ footer {
   max-width: 600px;
 }
 
-.kategoriak ul{
+.kategoriak ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -130,4 +131,32 @@ svg:hover {
 .copy {
   text-decoration: underline;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente los elementos */
+  }
+
+  .menu {
+    display: block;
+    margin-top: 20px;
+    /* Añadir un espacio entre el logo y el menú */
+    margin-bottom: 80px;
+  }
+
+  .menu a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  #datuak p {
+    font-size: 12px;
+  }
 }

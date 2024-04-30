@@ -4,30 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style/style.css">
-  <link rel="shortcut icon" href="IMG/logo/Logo.PNG">
+  <link rel="stylesheet" href="../Style/style.css">
+  <link rel="shortcut icon" href="../IMG/logo/Logo.PNG">
   <title>PHIM Zinemak</title>
 </head>
 
 <body>
   <nav>
     <div class="logo">
-      <img src="IMG/logo/Logo.PNG" alt="Logo">
-    </div>
-    <div class="menu-toggle" id="mobile-menu" onclick="MenuAldaketa()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <img src="../IMG/logo/Logo.PNG" alt="Logo">
     </div>
     <div class="menu" id="menu">
-      <a href="php/login.php">Login</a>
+      <a href="menu.html">Hasiera</a>
+      <a href="../php/langileak.php">Langileak</a>
+      <a href="../php/departamentuak.php">Departamentuak</a>
     </div>
-    <script>
-      function MenuAldaketa() {
-        document.getElementById("menu").classList.toggle("active");
-        document.getElementById("mobile-menu").classList.toggle("active");
-      }
-    </script>
   </nav>
   <main>
 
