@@ -27,7 +27,8 @@
           <div id="lang_depak">
             <xsl:for-each select="//departamentuak/departamentua">
               <div class="langdepKutxa">
-                <!-- for-each bat egiten dut. Non departamentuen irudia bere alt-rekin, izena, telefonoa, eta emaila ateratzen ditut -->
+                <!-- for-each bat egiten dut. Non departamentuen irudia bere alt-rekin, izena,
+                telefonoa, eta emaila ateratzen ditut -->
                 <img>
                   <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
                   <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
