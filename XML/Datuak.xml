@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <enpresa>
   <izena>InformatikEus</izena>
   <estatua>Euskal Herria</estatua>
@@ -7,6 +7,7 @@
     <langilea idDepartamentu="d1">
       <izena>Unai</izena>
       <abizena>Souto</abizena>
+	  <username>unai.souto</username>
       <soldata moneda="€">1500</soldata>
       <telefonoa>944 12 98 02</telefonoa>
       <email>unai.souto@elorrieta-errekamari.com</email>
@@ -22,6 +23,7 @@
     <langilea idDepartamentu="d1">
       <izena>Iker</izena>
       <abizena>Sanchez</abizena>
+	  <username>iker.sanchez</username>
       <soldata moneda="€">2000</soldata>
       <telefonoa>944 30 85 30</telefonoa>
       <email>iker.sanchez@elorrieta-errekamari.com</email>
@@ -37,6 +39,7 @@
     <langilea idDepartamentu="d2">
       <izena>Juan</izena>
       <abizena>Perez</abizena>
+	  <username>juan.perez</username>
       <soldata moneda="€">1800</soldata>
       <telefonoa>944 40 50 60</telefonoa>
       <email>juan.perez@elorrieta-errekamari.com</email>
@@ -52,6 +55,7 @@
     <langilea idDepartamentu="d2">
       <izena>María</izena>
       <abizena>García</abizena>
+	  <username>maria.garcia</username>
       <soldata moneda="€">1700</soldata>
       <telefonoa>944 70 80 90</telefonoa>
       <email>maria.garcia@elorrieta-errekamari.com</email>
@@ -67,6 +71,7 @@
     <langilea idDepartamentu="d3">
       <izena>Carlos</izena>
       <abizena>Martinez</abizena>
+	  <username>carlos.martinez</username>
       <soldata moneda="€">1900</soldata>
       <telefonoa>944 50 60 70</telefonoa>
       <email>carlos.martinez@elorrieta-errekamari.com</email>
@@ -82,6 +87,7 @@
     <langilea idDepartamentu="d3">
       <izena>Clara</izena>
       <abizena>Escudero</abizena>
+	  <username>clara.escudero</username>
       <soldata moneda="€">1900</soldata>
       <telefonoa>944 50 60 70</telefonoa>
       <email>clara.escudero@elorrieta-errekamari.com</email>
@@ -97,6 +103,7 @@
     <langilea idDepartamentu="d4">
       <izena>Asier</izena>
       <abizena>Martinez</abizena>
+	  <username>asier.martinez</username>
       <soldata moneda="€">1900</soldata>
       <telefonoa>944 50 60 70</telefonoa>
       <email>asier.martinez@elorrieta-errekamari.com</email>
@@ -112,6 +119,7 @@
     <langilea idDepartamentu="d4">
       <izena>Miguel</izena>
       <abizena>Pérez</abizena>
+	  <username>miguel.perez</username>
       <soldata moneda="€">1900</soldata>
       <telefonoa>944 50 60 70</telefonoa>
       <email>miguel.perez@elorrieta-errekamari.com</email>
