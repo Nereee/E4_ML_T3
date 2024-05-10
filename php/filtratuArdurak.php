@@ -1,7 +1,7 @@
 <?php
    // Cargar el documento XSL que procesará la solicitud
    $arauak = new DOMDocument();
-   $arauak->load("../XML/lang_depar.xsl");
+   $arauak->load("../XML/filtratuArdurak.xsl");
 
    // Cargar el documento XML que contiene los datos
    $datuak = new DOMDocument();
@@ -12,8 +12,8 @@
    $proc->importStylesheet($arauak);
 
    // Establecer el parámetro departamento con el valor recibido del formulario
-   $departamento = isset($_GET['departamento']) ? $_GET['departamento'] : '';
-   $proc->setParameter('', 'departamento', $departamento);
+   $ardura = isset($_GET['ardura']) ? $_GET['ardura'] : '';
+   $proc->setParameter('', 'ardura', $ardura);
 
    // Procesar y mostrar el resultado
    echo $proc->transformToXML($datuak);

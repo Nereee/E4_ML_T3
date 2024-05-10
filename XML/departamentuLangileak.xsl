@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" version="5"></xsl:output>
+    <xsl:param name="departamento"></xsl:param>
     <xsl:template match="/enpresa">
         <html>
             <head>
@@ -24,17 +25,23 @@
                 </nav>
                 <!-- Hemen select bat agertzen da departamentuko langileak eta ardurak arukesteko -->
                 <main>
-                    <form action="../php/bidaliBilatuta.php" method="get">
-                        <select name="departamento"> <!-- Agregado el atributo name -->
-                            <xsl:for-each select="//departamentuak/departamentua">
-                                <option value="{@id}"> <!-- Agregado el atributo value con el valor
-                                    del atributo id -->
-                                    <xsl:value-of select="izena" />
-                                </option>
-                            </xsl:for-each>
-                        </select>
-                        <input type="submit" value="Ikusi langileak"></input>
-                    </form>
+                    <div id="lang_depak">
+                        <xsl:for-each select="//langileak/langilea">
+                            <div class="langdepKutxa">
+                                <xsl:if test="@idDepartamentu = $departamento">
+                                    <img>
+                                        <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
+                                        <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                                    </img>
+                                <p>
+                                        <xsl:value-of select="izena"></xsl:value-of>
+                                        <br />
+                                        <xsl:value-of select="abizena"></xsl:value-of>
+                                    </p>
+                                </xsl:if>
+                            </div>
+                        </xsl:for-each>
+                    </div>
                 </main>
                 <footer>
                     <div id="info">

@@ -31,9 +31,6 @@
       <departamentuArduraduna>Bai</departamentuArduraduna>
       <hasiData>2022/04/19</hasiData>
       <irudia>../IMG/langileak/iker.png</irudia>
-      <ardurak>
-        <ardura>a1</ardura>
-      </ardurak>
     </langilea>
 
     <langilea idDepartamentu="d2">
@@ -47,9 +44,6 @@
       <departamentuArduraduna>Bai</departamentuArduraduna>
       <hasiData>2023/05/10</hasiData>
       <irudia>../IMG/langileak/juan.png</irudia>
-      <ardurak>
-        <ardura>a2</ardura>
-      </ardurak>
     </langilea>
 
     <langilea idDepartamentu="d2">
@@ -95,9 +89,6 @@
       <departamentuArduraduna>Ez</departamentuArduraduna>
       <hasiData>2023/07/20</hasiData>
       <irudia>../IMG/langileak/clara.png</irudia>
-      <ardurak>
-        <ardura>a3</ardura>
-      </ardurak>
     </langilea>
 
     <langilea idDepartamentu="d4">
@@ -111,9 +102,6 @@
       <departamentuArduraduna>Bai</departamentuArduraduna>
       <hasiData>2023/07/20</hasiData>
       <irudia>../IMG/langileak/asier.png</irudia>
-      <ardurak>
-        <ardura>a4</ardura>
-      </ardurak>
     </langilea>
 
     <langilea idDepartamentu="d4">
@@ -171,12 +159,12 @@
   <!-- ======================= ARDURAK =================================== -->
   <ardurak>
     <ardura id="a1">
-      <postua>Programatzailea</postua>
+      <postua>Programatzaile arduraduna</postua>
       <deskribapena>Departamentuko programatzaile bat da</deskribapena>
     </ardura>
 
     <ardura id="a2">
-      <postua>Markenting Koordinatzailea</postua>
+      <postua>Markenting rduraduna</postua>
       <deskribapena>Markenting departamentuko koordinatzailea</deskribapena>
     </ardura>
 
@@ -186,7 +174,7 @@
     </ardura>
 
     <ardura id="a4">
-      <postua>Administrazioa</postua>
+      <postua>Administrazio arduraduna</postua>
       <deskribapena>Administrazio arduraduna</deskribapena>
     </ardura>
   </ardurak>

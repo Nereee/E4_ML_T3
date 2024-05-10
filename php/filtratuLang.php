@@ -1,6 +1,6 @@
 <?php
    $arauak = new DOMDocument();
-   $arauak ->load("../XML/bilatu.xsl");
+   $arauak ->load("../XML/filtratuLang.xsl");
 
    $datuak = new DOMDocument();
    $datuak->load("../XML/Datuak.xml");

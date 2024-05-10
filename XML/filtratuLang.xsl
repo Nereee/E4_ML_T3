@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" version="5"></xsl:output>
-    <xsl:param name="departamento"></xsl:param>
     <xsl:template match="/enpresa">
         <html>
             <head>
@@ -25,13 +24,17 @@
                 </nav>
                 <!-- Hemen select bat agertzen da departamentuko langileak eta ardurak arukesteko -->
                 <main>
-                    <main>
-                        <xsl:for-each select="//langileak/langilea">
-                               <xsl:if test="@idDepartamentu = $departamento">
-                                <h1><xsl:value-of select="izena"></xsl:value-of></h1>
-                                </xsl:if>
+                    <form action="../php/lang_depar.php" method="get">
+                        <select name="departamento"> <!-- Agregado el atributo name -->
+                            <xsl:for-each select="//departamentuak/departamentua">
+                                <option value="{@id}"> <!-- Agregado el atributo value con el valor
+                                    del atributo id -->
+                                    <xsl:value-of select="izena"></xsl:value-of>
+                                </option>
                             </xsl:for-each>
-                    </main>
+                        </select>
+                        <input type="submit" value="Ikusi langileak"></input>
+                    </form>
                 </main>
                 <footer>
                     <div id="info">

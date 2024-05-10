@@ -28,11 +28,21 @@
             <xsl:for-each select="//departamentuak/departamentua">
               <div class="langdepKutxa">
                 <!-- for-each bat egiten dut. Non departamentuen irudia bere alt-rekin, izena,
-                telefonoa, eta emaila ateratzen ditut -->
-                <img>
-                  <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
-                  <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
-                </img>
+                      telefonoa, eta emaila ateratzen ditut -->
+                <a>
+                  <xsl:attribute name="href">
+                    <xsl:text>../php/departamentuLangileak.php?departamento=</xsl:text>
+                              <xsl:value-of select="@id"></xsl:value-of>
+                  </xsl:attribute>
+                  <img>
+                    <xsl:attribute name="src">
+                      <xsl:value-of select="irudia"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                      <xsl:value-of select="izena"></xsl:value-of>
+                    </xsl:attribute>
+                  </img>
+                </a>
                 <p>
                   <xsl:value-of select="izena"></xsl:value-of>
                 </p>
@@ -46,6 +56,7 @@
             </xsl:for-each>
           </div>
         </main>
+
         <footer>
           <div id="info">
             <div id="datuak">

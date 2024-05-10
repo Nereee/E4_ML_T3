@@ -24,10 +24,23 @@
         </nav>
         <!-- Hemen langileak agertuko dira. Datuak.XML-tik ateratuta -->
         <main class="langdep">
+          <form action="../php/filtratuArdurak.php" method="get">
+            <select name="ardura"> <!-- Agregado el atributo name -->
+              <xsl:for-each select="ardurak/ardura">
+                <option>
+                  <xsl:attribute name="value"><xsl:value-of select="@id"></xsl:value-of></xsl:attribute>
+                  <xsl:value-of select="postua"></xsl:value-of>
+                </option>
+              </xsl:for-each>
+            </select>
+            <input type="submit" value="Ikusi langileak"></input>
+          </form>
+
           <div id="lang_depak">
             <xsl:for-each select="//langilea">
               <div class="langdepKutxa">
-                <!-- for-each bat egiten dut. Non langileen irudia bere alt-rekin, izena/abizena, telefonoa, eta emaila ateratzen ditut -->
+                <!-- for-each bat egiten dut. Non langileen irudia bere alt-rekin, izena/abizena,
+                telefonoa, eta emaila ateratzen ditut -->
                 <img>
                   <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
                   <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
