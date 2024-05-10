@@ -18,8 +18,8 @@
           </div>
           <div class="menu" id="menu">
             <a href="../html/menu.html">Hasiera</a>
-            <a href="langileak.php">Langileak</a>
-            <a href="departamentuak.php">Departamentuak</a>
+            <a href="../php/langileak.php">Langileak</a>
+            <a href="../php/departamentuak.php">Departamentuak</a>
           </div>
         </nav>
         <!-- Hemen departamentuak agertuko dira. Datuak.XML-tik ateratuta -->

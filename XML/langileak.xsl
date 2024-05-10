@@ -18,13 +18,13 @@
           </div>
           <div class="menu" id="menu">
             <a href="../html/menu.html">Hasiera</a>
-            <a href="langileak.php">Langileak</a>
-            <a href="departamentuak.php">Departamentuak</a>
+            <a href="../php/langileak.php">Langileak</a>
+            <a href="../php/departamentuak.php">Departamentuak</a>
           </div>
         </nav>
         <!-- Hemen langileak agertuko dira. Datuak.XML-tik ateratuta -->
         <main class="langdep">
-          <form action="../php/filtratuArdurak.php" method="get">
+          <form id="arduraAukera" action="../php/filtratuArdurak.php" method="get">
             <select name="ardura"> <!-- Agregado el atributo name -->
               <xsl:for-each select="ardurak/ardura">
                 <option>

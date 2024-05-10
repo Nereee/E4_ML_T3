@@ -9,7 +9,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href="../Style/style.css" />
                 <link rel="shortcut icon" href="../img/logo/Logo.PNG" />
-                <link rel="stylesheet" href="../Style/lang_dep.css" />
+                <link rel="stylesheet" href="../Style/departamentuLangileak.css" />
                 <title>PHIM Zinemak</title>
             </head>
             <body>
@@ -19,26 +19,30 @@
                     </div>
                     <div class="menu" id="menu">
                         <a href="../html/menu.html">Hasiera</a>
-                        <a href="langileak.php">Langileak</a>
-                        <a href="departamentuak.php">Departamentuak</a>
+                        <a href="../php/langileak.php">Langileak</a>
+                        <a href="../php/departamentuak.php">Departamentuak</a>
                     </div>
                 </nav>
                 <!-- Hemen select bat agertzen da departamentuko langileak eta ardurak arukesteko -->
-                <main>
-                    <div id="lang_depak">
-                        <xsl:for-each select="//langileak/langilea">
-                            <div class="langdepKutxa">
-                                <xsl:if test="@idDepartamentu = $departamento">
-                                    <img>
-                                        <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
-                                        <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
-                                    </img>
+                <main class="langileakIkusi">
+                    <div id="langileKutxa">
+                        <xsl:for-each select="//langileak/langilea[@idDepartamentu = $departamento]">
+                            <div class="langilea">
+                                <img>
+                                    <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
+                                    <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
+                                </img>
                                 <p>
-                                        <xsl:value-of select="izena"></xsl:value-of>
-                                        <br />
-                                        <xsl:value-of select="abizena"></xsl:value-of>
-                                    </p>
-                                </xsl:if>
+                                    <xsl:value-of select="izena"></xsl:value-of>
+                                    <br />
+                                    <xsl:value-of select="abizena"></xsl:value-of>
+                                </p>
+                                <p>
+                                    <xsl:value-of select="telefonoa" />
+                                </p>
+                                <p>
+                                    <xsl:value-of select="email" />
+                                </p>
                             </div>
                         </xsl:for-each>
                     </div>
