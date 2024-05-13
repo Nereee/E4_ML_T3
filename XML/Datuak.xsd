@@ -1,1 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="tlfn">
+  <xs:restriction base="xs:integer">
+    <xs:totalDigits value="9"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="postaKode">
+  <xs:restriction base="xs:integer">
+    <xs:totalDigits value="5"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="soldataMoneda">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="€"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="enpresa">
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="izena" type="xs:string"></xs:element>
+    <xs:element name="estatua" type="xs:string"></xs:element>
+    <xs:element name="langileak">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="langilea" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="izena" type="xs:string"></xs:element>
+                <xs:element name="abizena" type="xs:string"></xs:element>
+                <xs:element name="username" type="xs:string"></xs:element>
+                <xs:element name="soldata">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:integer">
+                        <xs:attribute name="moneda" type="soldataMoneda"></xs:attribute>
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="telefonoa" type="tlfn"></xs:element>
+                <xs:element name="email" type="xs:string"></xs:element>
+                <xs:element name="postakodea" type="postaKode"></xs:element>
+                <xs:element name="departamentuArduraduna" type="xs:string" default="Ez"></xs:element>
+                <xs:element name="hasiData" type="xs:date"></xs:element>
+                <xs:element name="irudia" type="xs:string"></xs:element>
+                <xs:element name="ardurak" maxOccurs="unbounded" minOccurs="0">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ardura" type="xs:string"></xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="idDepartamentu" type="xs:string"></xs:attribute>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="departamentuak">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="departamentua" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="izena" type="xs:string"></xs:element>
+                <xs:element name="helbidea" type="xs:string"></xs:element>
+                <xs:element name="telefonoa" type="tlfn"></xs:element>
+                <xs:element name="email" type="xs:string"></xs:element>
+                <xs:element name="irudia" type="xs:string"></xs:element>
+              </xs:sequence>
+              <xs:attribute name="id" type="xs:string"></xs:attribute>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="ardurak">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="ardura" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="postua" type="xs:string"></xs:element>
+                <xs:element name="deskribapena" type="xs:string"></xs:element>
+              </xs:sequence>
+              <xs:attribute name="id" type="xs:string"></xs:attribute>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
