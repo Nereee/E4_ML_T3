@@ -35,7 +35,7 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 90%);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 906px){
     #lang_depak {
         grid-template-columns: auto;
     }

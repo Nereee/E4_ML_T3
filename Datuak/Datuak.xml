@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<enpresa xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="Datuak.xsd">
+ <enpresa xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="Datuak.xsd">
   <izena>InformatikEus</izena>
   <estatua>Euskal Herria</estatua>
   <!--  ========================= LANGILEAK ================================ -->

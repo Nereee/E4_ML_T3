@@ -1,11 +1,11 @@
 <?php
    // Cargar el documento XSL que procesará la solicitud
    $arauak = new DOMDocument();
-   $arauak->load("../XML/filtratuArdurak.xsl");
+   $arauak->load("../Datuak/filtratuArdurak.xsl");
 
    // Cargar el documento XML que contiene los datos
    $datuak = new DOMDocument();
-   $datuak->load("../XML/Datuak.xml");
+   $datuak->load("../Datuak/Datuak.xml");
 
    // Crear el procesador XSLT
    $proc = new XSLTProcessor();
