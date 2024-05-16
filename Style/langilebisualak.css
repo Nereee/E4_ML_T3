@@ -1,0 +1,21 @@
+.ardura img {
+    max-height: 200px; /* Irudiaren gehienezko altuera */
+}
+
+.ardurakIkusi {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%; 
+    padding: 20px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 90%);
+}
+
+.ardura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

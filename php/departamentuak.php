@@ -1,9 +1,9 @@
 <?php
    $arauak = new DOMDocument();
-   $arauak ->load("../XML/departamentuak.xsl");
+   $arauak ->load("../Datuak/departamentuak.xsl");
 
    $datuak = new DOMDocument();
-   $datuak->load("../XML/Datuak.xml");
+   $datuak->load("../Datuak/Datuak.xml");
 
    $proc = new XSLTProcessor();
    $proc->importStylesheet($arauak);

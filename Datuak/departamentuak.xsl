@@ -18,23 +18,33 @@
           </div>
           <div class="menu" id="menu">
             <a href="../html/menu.html">Hasiera</a>
-            <a href="langileak.php">Langileak</a>
-            <a href="departamentuak.php">Departamentuak</a>
+            <a href="../php/langileak.php">Langileak</a>
+            <a href="../php/departamentuak.php">Departamentuak</a>
           </div>
         </nav>
-        <!-- Hemen langileak agertuko dira. Datuak.XML-tik ateratuta -->
+        <!-- Hemen departamentuak agertuko dira. Datuak.XML-tik ateratuta -->
         <main class="langdep">
           <div id="lang_depak">
-            <xsl:for-each select="//langilea">
+            <xsl:for-each select="//departamentuak/departamentua">
               <div class="langdepKutxa">
-                <!-- for-each bat egiten dut. Non langileen irudia bere alt-rekin, izena/abizena, telefonoa, eta emaila ateratzen ditut -->
-                <img>
-                  <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
-                  <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
-                </img>
+                <!-- for-each bat egiten dut. Non departamentuen irudia bere alt-rekin, izena,
+                      telefonoa, eta emaila ateratzen ditut -->
+                <a>
+                  <xsl:attribute name="href">
+                    <xsl:text>../php/departamentuLangileak.php?departamento=</xsl:text>
+                              <xsl:value-of select="@id"></xsl:value-of>
+                  </xsl:attribute>
+                  <img>
+                    <xsl:attribute name="src">
+                      <xsl:value-of select="irudia"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                      <xsl:value-of select="izena"></xsl:value-of>
+                    </xsl:attribute>
+                  </img>
+                </a>
                 <p>
                   <xsl:value-of select="izena"></xsl:value-of>
-                  <xsl:value-of select="abizena"></xsl:value-of>
                 </p>
                 <p>
                   <xsl:value-of select="telefonoa"></xsl:value-of>
@@ -46,6 +56,7 @@
             </xsl:for-each>
           </div>
         </main>
+
         <footer>
           <div id="info">
             <div id="datuak">

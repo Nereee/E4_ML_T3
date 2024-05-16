@@ -1,30 +1,14 @@
-#lang_depak {
+#langileKutxa {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Lau zutabeak berdineko zabalerekin */
+    grid-template-columns: repeat(2, 1fr); /* Lau zutabeak berdineko zabalerekin */
     gap: 20px; /* Kontainerrak arteko tartea */
 }
 
-#arduraAukera {
-    margin-bottom: 15px;
-}
-
-.langdepKutxa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.langdepKutxa img {
+.langilea img {
     max-height: 200px; /* Irudiaren gehienezko altuera */
 }
 
-.langdepIzena {
-    margin-top: 10px; /* Irudia eta izena arteko tartea */
-    font-size: 16px;
-}
-
-.langdep {
+.langileakIkusi {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,15 +19,22 @@
     box-shadow: 0 0 10px rgb(0 0 0 / 90%);
 }
 
+.langilea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 @media screen and (max-width: 906px){
-    #lang_depak {
+    #langileKutxa {
         grid-template-columns: auto;
     }
-    .langdepKutxa img {
+    .langilea img {
         max-height: 100px;
         margin-top: 10px;
     }
-    .langdepKutxa {
+    .langilea {
         border-top: 1px solid black;
 
     }

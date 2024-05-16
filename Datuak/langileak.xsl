@@ -18,22 +18,36 @@
           </div>
           <div class="menu" id="menu">
             <a href="../html/menu.html">Hasiera</a>
-            <a href="langileak.php">Langileak</a>
-            <a href="departamentuak.php">Departamentuak</a>
+            <a href="../php/langileak.php">Langileak</a>
+            <a href="../php/departamentuak.php">Departamentuak</a>
           </div>
         </nav>
-        <!-- Hemen departamentuak agertuko dira. Datuak.XML-tik ateratuta -->
+        <!-- Hemen langileak agertuko dira. Datuak.XML-tik ateratuta -->
         <main class="langdep">
+          <form id="arduraAukera" action="../php/filtratuArdurak.php" method="get">
+            <select name="ardura"> <!-- Agregado el atributo name -->
+              <xsl:for-each select="ardurak/ardura">
+                <option>
+                  <xsl:attribute name="value"><xsl:value-of select="@id"></xsl:value-of></xsl:attribute>
+                  <xsl:value-of select="postua"></xsl:value-of>
+                </option>
+              </xsl:for-each>
+            </select>
+            <input type="submit" value="Ikusi langileak"></input>
+          </form>
+
           <div id="lang_depak">
-            <xsl:for-each select="//departamentuak/departamentua">
+            <xsl:for-each select="//langilea">
               <div class="langdepKutxa">
-                <!-- for-each bat egiten dut. Non departamentuen irudia bere alt-rekin, izena, telefonoa, eta emaila ateratzen ditut -->
+                <!-- for-each bat egiten dut. Non langileen irudia bere alt-rekin, izena/abizena,
+                telefonoa, eta emaila ateratzen ditut -->
                 <img>
                   <xsl:attribute name="src"><xsl:value-of select="irudia"></xsl:value-of></xsl:attribute>
                   <xsl:attribute name="alt"><xsl:value-of select="izena"></xsl:value-of></xsl:attribute>
                 </img>
                 <p>
                   <xsl:value-of select="izena"></xsl:value-of>
+                  <xsl:value-of select="abizena"></xsl:value-of>
                 </p>
                 <p>
                   <xsl:value-of select="telefonoa"></xsl:value-of>
